@@ -1,0 +1,68 @@
+# 身份信息，关键字和数据报告对应如下
+identity_info:
+- 企业名称 #名称
+- 注册地址
+- 法定代表人
+- 统一信用代码 #统一社会信用代码
+- 工商注册号 #注册号
+- 注册时间 #成立日期
+- 注册资本
+- 经营范围
+
+# 信息列表
+info_list:
+- [shareholder_info_keyword, shareholder_info]
+- [change_record_keyword, change_record]
+- [administrative_penalty_keyword, administrative_penalty]
+- [executed_people_info_keyword, executed_people_info]
+- [court_announcement_keyword, court_announcement]
+- [abnormal_operation_keyword, abnormal_operation]
+
+# 股东信息
+shareholder_info_keyword: 股东信息
+shareholder_info:
+- 股东 #名称
+- 投资数额（万元） #出资额
+- 出资比例
+
+# 变更记录信息
+change_record_keyword: 变更记录
+change_record:
+- 变更项目
+- 变更前内容
+- 变更后内容
+- 变更日期
+
+# 行政处罚
+administrative_penalty_keyword: 行政处罚
+administrative_penalty:
+- 决定文书号
+- 违法行为类型
+- 处罚内容
+- 决定日期
+
+# 被执行人信息
+executed_people_info_keyword: 被执行人信息
+executed_people_info:
+- 案号
+- 立案时间
+- 执行法院
+- 执行标的
+
+# 法院公告
+court_announcement_keyword: 法院公告
+court_announcement:
+- 上诉方
+- 被诉方
+- 法院
+- 公告日期
+
+# 经营异常信息
+abnormal_operation_keyword: 经营异常
+abnormal_operation:
+- 列入经营异常原因
+- 列入日期
+- 列入决定机关
+- 移出经营异常原因
+- 移出日期
+- 移出决定机关

@@ -1,0 +1,10 @@
+# 身份信息，替换列表
+identity_info_replace_list:
+- ${COMP_NAME}
+- ${COMP_REGADDR}
+- ${COMP_LEAGEL}
+- ${COMP_UNITNO}
+- ${COMP_REGNO}
+- ${COMP_SDATE}
+- ${COMP_REGMONEY}
+- ${COMP_RANGE}
