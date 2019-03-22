@@ -52,3 +52,9 @@ def print_docx(docx):
                     for elment in iter_block_items(cell):
                         print(elment.text+'\t', end="")
                 print('\n')
+
+
+def delete_paragraph(paragraph):
+    p = paragraph._element
+    p.getparent().remove(p)
+    p._p = p._element = None

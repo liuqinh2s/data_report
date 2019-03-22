@@ -8,7 +8,7 @@ import re
 import yaml
 import os
 
-from word_manipulation import docx_iterator
+from word_manipulation import docx_enhanced
 
 current_path = os.path.dirname(os.path.realpath(__file__))
 f = open(current_path+"\\qichacha_config.yml", encoding="utf-8")
@@ -35,7 +35,7 @@ def recurse_dict2list(ll):
 # title表示表头内容，content表示需要删选的列
 def get_table_content(docx_file, title, content):
     result = []
-    docx_list = docx_iterator.docx_to_list(docx_file)
+    docx_list = docx_enhanced.docx_to_list(docx_file)
     for i in range(1, len(docx_list)):
         if isinstance(docx_list[i-1], str) and isinstance(docx_list[i], list) and config[title] in docx_list[i-1]:
             for j in range(1, len(docx_list[i])):
